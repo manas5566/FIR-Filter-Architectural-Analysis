@@ -1,0 +1,42 @@
+module XOR_MUX_Based_Adder(sum,Cout, A,B,cin);
+input [31:0]A,B;
+input cin;
+output[31:0]sum;
+output Cout;
+wire c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,c13,c14,c15,c16,c17,c18,c19,c20,c21,c22,c23,c24,c25,c26,c27,c28,c29,c30,c31;
+
+assign cin=1'b0;
+mux_xor_fa fa0(sum[0],c1,A[0],B[0],1'b0);
+mux_xor_fa fa1(sum[1],c2,A[1],B[1],c1);
+mux_xor_fa fa2(sum[2],c3,A[2],B[2],c2);
+mux_xor_fa fa3(sum[3],c4,A[3],B[3],c3);
+mux_xor_fa fa4(sum[4],c5,A[4],B[4],c4);
+mux_xor_fa fa5(sum[5],c6,A[5],B[5],c5);
+mux_xor_fa fa6(sum[6],c7,A[6],B[6],c6);
+mux_xor_fa fa7(sum[7],c8,A[7],B[7],c7);
+mux_xor_fa fa8(sum[8],c9,A[8],B[8],c8);
+mux_xor_fa fa9(sum[9],c10,A[9],B[9],c9);
+mux_xor_fa fa10(sum[10],c11,A[10],B[10],c10);
+mux_xor_fa fa11(sum[11],c12,A[11],B[11],c11);
+mux_xor_fa fa12(sum[12],c13,A[12],B[12],c12);
+mux_xor_fa fa13(sum[13],c14,A[13],B[13],c13);
+mux_xor_fa fa14(sum[14],c15,A[14],B[14],c14);
+mux_xor_fa fa15(sum[15],c16,A[15],B[15],c15);
+mux_xor_fa fa16(sum[16],c17,A[16],B[16],c16);
+mux_xor_fa fa17(sum[17],c18,A[17],B[17],c17);
+mux_xor_fa fa18(sum[18],c19,A[18],B[18],c18);
+mux_xor_fa fa19(sum[19],c20,A[19],B[19],c19);
+mux_xor_fa fa20(sum[20],c21,A[20],B[20],c20);
+mux_xor_fa fa21(sum[21],c22,A[21],B[21],c21);
+mux_xor_fa fa22(sum[22],c23,A[22],B[22],c22);
+mux_xor_fa fa23(sum[23],c24,A[23],B[23],c23);
+mux_xor_fa fa24(sum[24],c25,A[24],B[24],c24);
+mux_xor_fa fa25(sum[25],c26,A[25],B[25],c25);
+mux_xor_fa fa26(sum[26],c27,A[26],B[26],c26);
+mux_xor_fa fa27(sum[27],c28,A[27],B[27],c27);
+mux_xor_fa fa28(sum[28],c29,A[28],B[28],c28);
+mux_xor_fa fa29(sum[29],c30,A[29],B[29],c29);
+mux_xor_fa fa30(sum[30],c31,A[30],B[30],c30);
+mux_xor_fa fa31(sum[31],Cout,A[31],B[31],c31);
+
+endmodule
